@@ -1,4 +1,4 @@
-[![Build Status](https://dev.azure.com/chefcorp-partnerengineering/Chef%20Base%20Plans/_apis/build/status/chef-base-plans.flex?branchName=master)](https://dev.azure.com/chefcorp-partnerengineering/Chef%20Base%20Plans/_build/latest?definitionId=69&branchName=master)
+[![Build Status](https://dev.azure.com/chefcorp-partnerengineering/Chef%20Base%20Plans/_apis/build/status/chef-base-plans.flex?branchName=master)](https://dev.azure.com/chefcorp-partnerengineering/Chef%20Base%20Plans/_build/latest?definitionId=100&branchName=master)
 
 # flex
 
@@ -39,6 +39,22 @@ will add the following binaries to the PATH:
 * /bin/lex
 * /bin/flex
 * /bin/flex++
+
+For example:
+
+```bash
+$ hab pkg install core/flex --binlink
+» Installing core/flex
+☁ Determining latest version of core/flex in the 'stable' channel
+→ Using core/flex/2.6.4/20200305232255
+★ Install of core/flex/2.6.4/20200305232255 complete with 0 new packages installed.
+» Binlinking lex from core/flex/2.6.4/20200305232255 into /bin
+★ Binlinked lex from core/flex/2.6.4/20200305232255 to /bin/lex
+» Binlinking flex from core/flex/2.6.4/20200305232255 into /bin
+★ Binlinked flex from core/flex/2.6.4/20200305232255 to /bin/flex
+» Binlinking flex++ from core/flex/2.6.4/20200305232255 into /bin
+★ Binlinked flex++ from core/flex/2.6.4/20200305232255 to /bin/flex++
+```
 
 #### Using an example binary
 
