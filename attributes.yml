@@ -1,1 +1,2 @@
-command_relative_path: '/bin/flex'
+plan_name: 'flex'
+command_relative_path: 'bin/flex'
